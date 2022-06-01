@@ -1,0 +1,73 @@
+body {
+    background: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+h1 {
+    color:  hsl(0, 0%, 100%) ;
+}
+
+.btn {
+    border-radius: 100%;
+    border-style: none;
+    padding: 0.8em 1em;
+    background: hsl(213, 19%, 18%);
+}
+
+.form, dialog{
+    background-color: hsl(218, 21%, 15%);
+    max-width: 320px;
+    max-height: 320px;
+    border-radius: 1em;
+}
+form > button {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    margin: 0 auto;
+    display: block;
+    padding: 0.4em 1.5em;
+    font-size: 1em;
+    border-style: none;
+    border-radius: 3em;
+    margin-top: 1em;
+    margin-bottom:1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn {
+    margin: 0em 0.3em;
+    color:rgb(187, 187, 187) ;
+    font-weight: 500;
+    cursor: pointer;
+}
+p {
+    padding: 1em;
+    color: hsl(0, 0%, 86%);
+}
+h1 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+img {
+    padding: 0.5em;
+}
+.orange-active {
+    background-color: hsl(25, 97%, 53%);
+    color: #ffffff;
+}
+.fade {
+    background-color: hsl(213, 20%, 26%);
+}
+.hide {
+    display: none;
+}
+
+
