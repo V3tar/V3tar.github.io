@@ -15,7 +15,10 @@ form.addEventListener('submit',(e) => {
     modal.showModal();
     //hide the form
     form.classList.add('hide');
-    //select the h4 in the dialog
+    btns.forEach((btn) => {
+        let btn_text = btn.textContent; 
+    });
+     //select the h4 in the dialog
     let h3 = document.querySelector('h3');
-    h3.textContent = `You selected  out of 5`
+    h3.textContent = `You selected ${btn_text} out of 5`
 });
