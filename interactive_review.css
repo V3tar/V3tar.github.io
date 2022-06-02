@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@100;200;300;400;500;600;700&display=swap');
 body {
     background: hsl(216, 12%, 8%);
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    font-family: 'Overpass', sans-serif;
 }
 h1 {
     color:  hsl(0, 0%, 100%) ;
@@ -12,14 +14,15 @@ h1 {
 .btn {
     border-radius: 100%;
     border-style: none;
-    padding: 0.8em 1em;
+    padding: 0.8em 1.1em;
     background: hsl(213, 19%, 18%);
+    font-family: 'Overpass', sans-serif;
 }
 
 .form, dialog{
     background-color: hsl(218, 21%, 15%);
-    max-width: 320px;
-    max-height: 320px;
+    max-width: 360px;
+    max-height: 360px;
     border-radius: 1em;
 }
 form > button {
@@ -35,6 +38,12 @@ form > button {
     margin-bottom:1em;
     font-weight: 600;
     cursor: pointer;
+    font-family: 'Overpass', sans-serif;
+    transition: all 0.5s linear;
+}
+form > button:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
 }
 .btn-container {
     display: flex;
@@ -46,6 +55,16 @@ form > button {
     color:rgb(187, 187, 187) ;
     font-weight: 500;
     cursor: pointer;
+    transition: all 0.2s linear;
+}
+.btn:hover {
+    background-color: hsl(25, 97%, 53%);
+    color: #ffffff;
+}
+.btn:focus {
+    background: #565c6f;
+    color: #ffffff;
+    font-weight: 500;
 }
 p {
     padding: 1em;
@@ -59,15 +78,22 @@ h1 {
 img {
     padding: 0.5em;
 }
-.orange-active {
-    background-color: hsl(25, 97%, 53%);
-    color: #ffffff;
-}
-.fade {
-    background-color: hsl(213, 20%, 26%);
-}
 .hide {
     display: none;
+}
+h3 {
+    background: #565c6f;
+    color: hsl(25, 97%, 53%);
+    font-weight: 300;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 10px;
+}
+.star > img {
+    background: #565c6f;
+    border-radius: 100%;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
 
